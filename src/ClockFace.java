@@ -9,14 +9,17 @@ public class ClockFace extends JPanel {
     final double angle= 2*Math.PI/12;
     private int cirkSize;
     private int dx,dy;
+    LocalTime time;
 
 
     //Contructor
     public ClockFace(int num){
         size = num;
         middle = size/2;
+
         this.setBackground(Color.pink);
         this.setPreferredSize(new Dimension(size,size));
+
     }
 
     //methods
@@ -25,10 +28,13 @@ public class ClockFace extends JPanel {
     public void paintComponent(Graphics g){
         super.paintComponent(g);
 
+        time= LocalTime.now();
         face(g);
         drawNum(g);
-
+        drawHour(g);
+        drawMinute(g);
         drawSecond(g);
+
         repaint();
     }
 
@@ -54,7 +60,45 @@ public class ClockFace extends JPanel {
         }
     }
 
+    public void drawHour(Graphics g){
+        int hour= time.getHour();
+        double v= ((2*Math.PI)/12)*hour;
+        int dist= (int) (size*0.2);
+
+        int posX = (int) (dist * Math.sin(v));
+        int posY= (int) (dist * Math.cos(v));
+        posX= middle+posX;
+        posY= middle -posY;
+
+        g.drawLine(middle, middle, posX,posY);
+
+    }
+
+    public void drawMinute(Graphics g){
+        int minute= time.getMinute();
+        double v= ((2*Math.PI)/60)*minute;
+        int dist= (int) (size*0.3);
+
+        int posX = (int) (dist * Math.sin(v));
+        int posY= (int) (dist * Math.cos(v));
+        posX= middle+posX;
+        posY= middle -posY;
+
+        g.drawLine(middle, middle, posX,posY);
+
+    }
+
     public void drawSecond(Graphics g){
+        int minute= time.getSecond();
+        double v= ((2*Math.PI)/60)*minute;
+        int dist= (int) (size*0.4);
+
+        int posX = (int) (dist * Math.sin(v));
+        int posY= (int) (dist * Math.cos(v));
+        posX= middle+posX;
+        posY= middle -posY;
+
+        g.drawLine(middle, middle, posX,posY);
 
     }
 

@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="575f12bd-1f86-4bac-bf9a-9d02c5b25f61" name="Changes" comment="">
+    <list default="true" id="575f12bd-1f86-4bac-bf9a-9d02c5b25f61" name="Changes" comment="Lesson start">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ClockFace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ClockFace.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,11 +56,22 @@
       <workItem from="1675250152036" duration="4362000" />
       <workItem from="1676372659749" duration="995000" />
       <workItem from="1676378962926" duration="4543000" />
-      <workItem from="1676459778805" duration="11000" />
+      <workItem from="1676459778805" duration="2347000" />
     </task>
+    <task id="LOCAL−00001" summary="Lesson start">
+      <created>1676459815368</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1676459815368</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Lesson start" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson start" />
   </component>
 </project>
